@@ -21,7 +21,7 @@ class States(Enum):
 
 
 class ChatController:
-    CAPTION_REGEX = compile('^[A-zА-яІіЎў_.-]+$')
+    CAPTION_REGEX = compile('^[A-zА-яЁёІіЎў_. \'-]+$')
     NUMBER_REGEX = compile('^[0-9]+$')
 
     def __init__(self, dispatcher: Dispatcher, messages: DynaBox):
